@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    background-color: green;
+    color: rgb(50, 50, 50);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#heading {
+    text-align: center;
+}
+
+#createGenerator {
+    color: inherit;
+    text-align: center;
+    width: 40%;
+    position: relative;
+    left: 28%;
+    background-color: greenyellow;
+    padding: 2%;
+    border-radius: 100px;
+    border: 2px solid  rgb(50, 50, 50);
+}
+
+select {
+    background-color: white;
+    cursor: pointer;
+    padding: 2%;
+    color: black;
+}
+
+option {
+    font-weight: bold;
+    color: green;
+}
+
+#default {
+    color: rgb(50, 50, 50);
+    text-align: center;
+    font-weight: normal;
+}
+
+
+#generator {
+    background-color: rgb(50, 50, 50);
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#result {
+    background-color: rgb(29, 28, 28);
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    right: 0;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: greenyellow;
+    font-size: 300%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#altPara {
+    color: greenyellow;
+    position: absolute;
+    bottom: 0;
+}
+
+#genNum {
+    display: block;
+}
+
+#min, #max, .randomXButton {
+    text-align: center;
+    margin: 4%;
+    width: 10%;
+    height: 10%;
+    display: block;
+    padding: 2%;
+}
+
+#genAbcSettings {
+    color: greenyellow;
+}
+
+#check1, #check2, #check3 {
+    display: block;
+}
+
+#labelMin {
+    display: inline;
+}
+
+#genAbc {
+    display: none;
+}
+
+#genBen {
+    display: none;
+}
+
+.randomXButton {
+    margin: 5%;
+    width: 84%;
+    background-color: greenyellow;
+    border: none;
+    cursor: pointer;
+    color: rgb(29, 28, 28);
+}
+
+#newListPopup {
+    display: none;
+    background-color: white;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    bottom: 10px;
+    z-index: 2;
+    text-align: center;
+}
+
+#closeListCreater {
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    color: red;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+#errP {
+    font-weight: bold;
+    color: red;
+}

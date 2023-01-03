@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zufallsgenerator</title>
+    <script defer src="showContent.js"></script>
+    <script defer src="generator.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <script defer src="userGenerator.js"></script>
+    <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+    <div id="welcome">
+        <h1 id="heading">Willkommen zu diesem Zufallsgenerator</h1>
+        <div id="createGenerator">
+            <p>Wählen Sie hier die "Art des Zufalls" aus:</p>
+        <select onchange="check()">
+            <option id="numbers" selected>Zahlen</option>
+            <option id="abc">Buchstaben</option>
+            <option id="benutzerdefiniert">Benutzerdefiniert</option>
+        </select>
+        </div>
+    </div>
+    <div id="generator">
+        <div id="genNum">
+            <div id="numSettings">
+                <div id="min">
+                    <input type="number" value="1" id="numMin">
+                    <label for="numMin" id="labelMin">Cool</label>
+                </div>
+                <div id="max">
+                    <input type="number" name="numMax" value="10" id="numMax">
+                </div>
+            </div>
+            <button class="randomXButton" type="button" id="createRandomNumberButton">Generieren!</button>
+        </div>
+        <div id="genAbc">
+            <div id="genAbcSettings">
+                <div id="check1">
+                    <input type="checkbox" checked id="uppercase">
+                    <label for="uppercase">Großbuchstaben</label>
+                </div>
+                <div id="check2">
+                    <input type="checkbox" checked id="lowercase">
+                    <label for="lowercase">Kleinbuchstaben</label>
+                </div>
+                <div id="check3">
+                    <input type="checkbox" checked id="special">
+                    <labe for="special">Umlaute</labe>
+                </div>
+                <button class="randomXButton" type="button" id="createRandomLetter">Generieren!</button>
+            </div>
+        </div>
+        <div id="genBen">
+            <button id="createListBtn">Neue Liste erstellen</button>
+            
+        </div>
+        <div id="newListPopup">
+            <h3 id="newList">Neue Liste hinzufügen</h3>
+            <button id="closeListCreater">x</button>
+            <div id="listCreaterArea">
+                <input class="newListInputs" type="text" id="selectListName" placeholder="Listenname"><br><br>
+                <input type="button" id="createList" value="Liste erstellen">
+            </div>
+            <p id="errP"><br></p>
+        </div>
+        <p id="altPara"><br></p>
+    </div>
+    <div id="result"></div>
+</body>
+</html>
