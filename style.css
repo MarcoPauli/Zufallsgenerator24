@@ -86,6 +86,11 @@ option {
     height: 10%;
     display: block;
     padding: 2%;
+    font-size: large;
+}
+
+input {
+    font-size: large;
 }
 
 #genAbcSettings {

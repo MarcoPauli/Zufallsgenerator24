@@ -20,15 +20,15 @@ function createNumber () {
     let result = document.getElementById("result");
     result.innerHTML = "";
     para.innerHTML = "";
-    let conditions = isNaN(min) || isNaN(max) || min.includes(".") || max.includes(".") || (Number(min) < 1) || (Number(min) > 10000) || (Number(max) < 1) || (Number(max) > 10000) || (Number(min) > Number(max));
+    let conditions = isNaN(Number(min)) || isNaN(Number(max)) || min.includes(".") || max.includes(".") || (Number(min) < 1) || (Number(min) > 10000) || (Number(max) < 1) || (Number(max) > 10000) || (Number(min) > Number(max));
     if (conditions) {
         para.innerHTML = "Bitte nur ganze Zahlen zwischen 1 und 10000 eingeben!";
     }
 
-    if (min > max) {
+    if (Number(min) > Number(max)) {
         para.innerHTML = "Minimum kann nicht größer als Maximum sein."
     }
-    if (min == max) {
+    if (Number(min) == Number(max)) {
         para.innerHTML = "Minimum und Maximum können nicht gleich sein."
     }
     min = Number(min);
